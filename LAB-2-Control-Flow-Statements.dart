@@ -42,6 +42,6 @@ void printFibonacciSequence(int n) {
 }
 
 void main() {
-  printDayOfWeek(3); // Example: Prints Wednesday
-  printFibonacciSequence(10); // Prints the first 10 numbers of the Fibonacci sequence
+  printDayOfWeek(3); 
+  printFibonacciSequence(10); 
 }
