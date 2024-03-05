@@ -1,51 +1,47 @@
-void main() {
-  // Exercise 1 demonstration
-  print("Exercise 1: Print Day of the Week");
-  printDayOfWeek(3); // Should print "Wednesday"
-  
-
-  // Exercise 2 demonstration
-  print("Exercise 2: Print First 10 Numbers in Fibonacci Sequence");
-  printFibonacci(10); // Prints the first 10 Fibonacci numbers
-}
-
 void printDayOfWeek(int day) {
-  switch(day) {
+  switch (day) {
     case 1:
-      print("Monday");
+      print('Monday');
       break;
     case 2:
-      print("Tuesday");
+      print('Tuesday');
       break;
     case 3:
-      print("Wednesday");
+      print('Wednesday');
       break;
     case 4:
-      print("Thursday");
+      print('Thursday');
       break;
     case 5:
-      print("Friday");
+      print('Friday');
       break;
     case 6:
-      print("Saturday");
+      print('Saturday');
       break;
     case 7:
-      print("Sunday");
+      print('Sunday');
       break;
     default:
-      print("Invalid input. Please enter a number from 1 to 7.");
+      print('Invalid day');
   }
 }
 
-void printFibonacci(int n) {
-  int a = 0, b = 1;
-  print(a);
-  print(b);
+void printFibonacciSequence(int n) {
+  int first = 0, second = 1, next;
 
-  for (int i = 2; i < n; i++) {
-    int next = a + b;
+  for (int i = 0; i < n; i++) {
+    if (i <= 1) {
+      next = i;
+    } else {
+      next = first + second;
+      first = second;
+      second = next;
+    }
     print(next);
-    a = b;
-    b = next;
   }
+}
+
+void main() {
+  printDayOfWeek(3); // Example: Prints Wednesday
+  printFibonacciSequence(10); // Prints the first 10 numbers of the Fibonacci sequence
 }
