@@ -19,7 +19,7 @@ void main() async {
         home: const HomeWidget(title: "Providers Posts"),
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
-            seedColor: Color.fromARGB(255, 241, 202, 224),
+            seedColor: Color.fromARGB(255, 227, 205, 219),
           ),
         ),
       ),
